@@ -28,7 +28,7 @@ public class DB {
         String password = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
         String name = "db";
         String url = "jdbc:mysql://" + host + ":" + port + "/" + name;
-        Connection con =DriverManager.getConnection(url, username, password);
+        Connection con = DriverManager.getConnection(url, username, password);
         return con;
 
     }
@@ -46,7 +46,7 @@ public class DB {
             
             }
         } catch (SQLException ex) {
-            Logger.getLogger(DB.class.getName()).log(Level.SEVERE, null, ex);
+            output="SQL exception" + ex.getMessage();
         }
         
         return output;
