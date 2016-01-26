@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page  import="DB.DB" %>
+<%@page  import="database.DB" %>
 <!DOCTYPE html>
 <html>
     <head>

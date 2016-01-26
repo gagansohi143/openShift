@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DB;
+package database;
 
 import java.util.logging.Logger;
 import java.sql.*;
