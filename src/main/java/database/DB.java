@@ -41,8 +41,8 @@ public class DB {
             Statement stmt = conn.createStatement();//    
             ResultSet rs = stmt.executeQuery("select * from people");
             while (rs.next()) {
-            output +="<h2>"+rs.getString("name")+"<h2>";
-            output +="<h2>"+rs.getString("bio")+"<h2>";
+            output +="<h2>"+rs.getString("name")+"</h2>";
+            output +="<h2>"+rs.getString("bio")+"</h2>";
             
             }
         } catch (SQLException ex) {
