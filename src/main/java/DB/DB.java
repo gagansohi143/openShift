@@ -28,8 +28,8 @@ public class DB {
         String password = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
         String name = "db";
         String url = "jdbc:mysql://" + host + ":" + port + "/" + name;
-        Connection con =DriverManager.getConnection(url, username, password);
-        return con;
+        
+        return DriverManager.getConnection(url, username, password);
 
     }
 
